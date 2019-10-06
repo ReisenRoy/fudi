@@ -19,6 +19,7 @@
   box-sizing: border-box;
   --main-text-color: #ffffff;
   --secondary-text-color: #1e1e1e;
+  --border-color: #f57365;
 }
 
 *,
@@ -29,14 +30,14 @@
 }
 
 body {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Lato";
 }
 
 header {
   position: relative;
   height: 100vh;
-  font-family: "Lato";
   color: var(--main-text-color);
   background-image: url("../assets/img/main_image.jpg");
   background-size: cover;
@@ -77,6 +78,34 @@ header {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 100px;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 5px rgba(190, 188, 188, 0.3);
+}
+
+.heading-primary--sub {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 0px 1px 40px rgba(190, 188, 188, 0.3);
+  opacity: 0.7;
 }
 
 .menu {
@@ -125,36 +154,6 @@ header {
   display: block;
   content: "\2261";
   text-indent: 0;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-}
-
-.heading-primary--main {
-  display: block;
-  font-size: 100px;
-  font-weight: bold;
-  line-height: 1;
-  letter-spacing: 0.2em;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 2px 5px rgba(190, 188, 188, 0.3);
-}
-
-.heading-primary--sub {
-  display: block;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 36px;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 0px 1px 40px rgba(190, 188, 188, 0.3);
-  opacity: 0.7;
 }
 
 .main-btn {  
@@ -280,6 +279,37 @@ button[type="submit"]:active {
   font-style: normal;
   text-align: center;
   cursor: pointer;
+}
+
+
+.section__about {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.about-el {
+  flex-basis: 32%;
+  text-align: center;
+  letter-spacing: 0.07em;
+  line-height: 1.6;
+}
+
+.about-el__title {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  border-image: linear-gradient( to right,
+  transparent 40%, var(--border-color) 40%, var(--border-color) 60%,
+  transparent 60% );
+  border-image-slice: 1;
+}
+
+.about-el__text {
+  font-weight: 300;
 }
 
 .hidden {
