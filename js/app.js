@@ -6,7 +6,8 @@ const elements = {
   loginForm: document.querySelector('.form__log-in'),
   signupForm: document.querySelector('.form__sign-up'),
   modal: document.getElementById('modal'),
-  closeModal: document.getElementById('close')
+  closeModal: document.getElementById('close'),
+  reviewsBtn: document.querySelectorAll('.reviews__btn')
 };
 
 elements.menuBtn.addEventListener('click', (e) => {
