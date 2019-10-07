@@ -222,8 +222,6 @@ header {
 }
 
 [class^="form"] {
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
   font-size: 1.5em;
   color: var(--secondary-text-color);
 }
@@ -246,16 +244,16 @@ input[type="password"]:focus {
   outline: none;
 }
 
-input[type="checkbox"] {
-  display: inline-block;
+input[type="checkbox"] {  
   font-size: 1em;
   margin-bottom: 1.2em;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 button[type="submit"] {
+  display: block;
   padding: 15px 30px;
-  font-style: italic;
+  font-size: 1em;
   color: var(--secondary-text-color);
   border: 2px solid var(--secondary-text-color);
   border-radius: 3px;
@@ -275,8 +273,8 @@ button[type="submit"]:active {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10px;
-  font-size: 1em;
+  bottom: 30px;
+  font-size: 1.2em;
   font-style: normal;
   text-align: center;
   cursor: pointer;
