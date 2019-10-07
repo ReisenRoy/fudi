@@ -21,6 +21,7 @@
   --secondary-text-color: #1e1e1e;
   --border-color: #f57365;
   --bg-color: #f7f7f7;
+  --dark-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 *,
@@ -43,6 +44,7 @@ header {
   background-image: url("../assets/img/main_image.jpg");
   background-size: cover;
   background-position: center;
+  box-shadow: inset 0 -10px 100px var(--dark-shadow-color);
 }
 
 .header__wrapper {
@@ -172,7 +174,7 @@ header {
 
 .main-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem var(--dark-shadow-color);
 }
 
 .header__text {
@@ -238,7 +240,7 @@ input[type="password"] {
   font-size: 1em;
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--dark-shadow-color);
 }
 
 input[type="email"]:focus,
@@ -249,7 +251,7 @@ input[type="password"]:focus {
 input[type="checkbox"] {  
   font-size: 1em;
   margin-bottom: 1.2em;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--dark-shadow-color);
 }
 
 button[type="submit"] {
@@ -264,7 +266,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 7px var(--dark-shadow-color);
 }
 
 button[type="submit"]:active {
@@ -330,6 +332,7 @@ button[type="submit"]:active {
   padding: 100px 10px 0;
   background-color: var(--bg-color);
   overflow: hidden;
+  box-shadow: inset 0 -10px 100px var(--dark-shadow-color);
 }
 
 .download__iphone {
