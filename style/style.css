@@ -435,6 +435,16 @@ main {
 }
 
 
+.footer {
+  padding: 40px 0;
+  background-color: var(--bg-color);
+}
+
+.footer p {
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
 .hidden {
   display: none;
 }
