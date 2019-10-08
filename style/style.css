@@ -354,13 +354,13 @@ main {
   background-size: cover;
 }
 
-[class^="reviews__el"] {
+[class^="reviews-el"] {
   margin: 0 auto;
   width: 60%;
   text-align: center;
 }
 
-.reviews__location {
+.reviews-el__location {
   margin-top: 15px;
   margin-bottom: 20px;
   font-size: 0.9em;
