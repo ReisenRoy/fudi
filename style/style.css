@@ -434,6 +434,18 @@ main {
   height: auto;
 }
 
+.info {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--dark-shadow-color);
+}
+
+.info-el {
+  display: inline-block;
+  text-align: center;
+}
+
 
 .footer {
   padding: 40px 0;
@@ -442,7 +454,7 @@ main {
 
 .footer p {
   text-align: center;
-  color: var(--secondary-text-color);
+  color: var(--dark-shadow-color);
 }
 
 .hidden {
