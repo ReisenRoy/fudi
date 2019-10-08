@@ -301,7 +301,7 @@ main {
 
 .about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 100px 0;
 }
 
@@ -347,6 +347,7 @@ main {
 
 
 .reviews {
+  margin-bottom: 100px;
   padding: 80px 0;
   background-image: radial-gradient( rgba(74, 57, 73, 0.3), rgba(74, 57, 73, 0.9) ), url("../assets/img/reviews_image.jpg");
   background-position: center;
@@ -383,6 +384,56 @@ main {
 .reviews__btn--active {
   background-color: rgba(247, 247, 247, 1);
 }
+
+
+.food__title {
+  text-align: center;
+  border-image: linear-gradient( to right,
+  transparent 45%, var(--border-color) 45%, var(--border-color) 55%,
+  transparent 55% );
+  border-image-slice: 1;
+}
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.food-el {
+  position: relative;
+  flex-basis: 20%;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.food-el:hover {
+  transform: scale(1.1);
+  z-index: 100;
+  box-shadow: 5px 5px 10px var(--dark-shadow-color);
+}
+
+.food-el__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1em;
+  text-align: center;
+  color: var(--main-text-color);
+  text-shadow: 0px 1px 40px var(--dark-shadow-color);
+}
+
+.food-el__cuisine {
+  text-transform: uppercase;
+}
+
+.food-el__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 
 .hidden {
   display: none;

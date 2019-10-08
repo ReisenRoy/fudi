@@ -7,7 +7,8 @@ const elements = {
   signupForm: document.querySelector('.form__sign-up'),
   modal: document.getElementById('modal'),
   closeModal: document.getElementById('close'),
-  reviewsBtn: document.querySelectorAll('.reviews__btn')
+  reviewsBtn: document.querySelectorAll('.reviews__btn'),
+  foodList: document.getElementById('food')
 };
 
 elements.menuBtn.addEventListener('click', (e) => {
