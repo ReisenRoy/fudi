@@ -464,21 +464,29 @@ main {
   border-image-slice: 1;
 }
 
+@supports (display: grid) {
+  .food {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+  
+  @media (min-width: 400px) and (max-width: 800px) {
+    .food {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .food {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
 .food {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-}
-
-@media (min-width: 400px) and (max-width: 800px) {
-  .food {
-    grid-template-columns: repeat(3, auto);
-  }
-}
-
-@media (max-width: 400px) {
-  .food {
-    grid-template-columns: repeat(2, auto);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .food-el {
