@@ -559,6 +559,17 @@ main {
   border-image-slice: 1;
 }
 
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @supports (display: grid) {
   .food {
     display: grid;
@@ -576,17 +587,6 @@ main {
       grid-template-columns: repeat(2, auto);
     }
   }
-}
-
-.food {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .food-el {
